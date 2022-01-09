@@ -7,9 +7,18 @@ use Illuminate\Support\Facades\Facade;
 use Avxman\ClearCache\Classes\ClearCacheClass;
 
 /**
- * Фасад вкл./откл. внешних ссылок в контексте на сайте
+ * Фасад вкл./откл. очистка кэша сайта (приложения)
  *
- * @see
+ * @method static ClearCacheClass setEnabled(bool $enabled = true)
+ * @method static ClearCacheClass setLaravelLocalization(bool $enabled = false)
+ * @method static array getMessage()
+ * @method static ClearCacheClass cache()
+ * @method static ClearCacheClass config()
+ * @method static ClearCacheClass route()
+ * @method static ClearCacheClass view()
+ * @method static ClearCacheClass all()
+ *
+ * @see ClearCacheClass
  */
 class ClearCacheFacade extends Facade
 {

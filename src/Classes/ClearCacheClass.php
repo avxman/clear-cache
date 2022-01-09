@@ -8,31 +8,31 @@ class ClearCacheClass
 {
 
     /**
-     *
+     * Список конфигураций библиотеки
      * @var array $config = []
     */
     protected array $config = [];
 
     /**
-     *
+     * Вкл./Откл. работу библиотеки
      * @var bool $enabled = true
     */
     protected bool $enabled = true;
 
     /**
-     *
+     * Проверка на использование библиотеки mcamara/laravel-localization
      * @var bool $is_laravel_localization = false
     */
     protected bool $is_laravel_localization = false;
 
     /**
-     *
+     * Сохранение сообщений
      * @var array $message = []
     */
     protected array $message = [];
 
     /**
-     *
+     * Записать сообщение
      * @return self
     */
     protected function setMessage() : self{
@@ -41,7 +41,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Конструктор
     */
     public function __construct(){
 
@@ -51,7 +51,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Проверка на существование динамического метода
      * @param string $name
      * @param array $arguments
      */
@@ -61,7 +61,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Перезапись вкл./откл. работы библиотеки
      * @param bool $enabled = true
      * @return ClearCacheClass
      */
@@ -71,7 +71,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Перезапись проверки на использование библиотеки mcamara/laravel-localization
      * @param bool $enabled = false
      * @return ClearCacheClass
      */
@@ -81,7 +81,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Получаем все сообщения
      * @return array
     */
     public function getMessage() : array{
@@ -89,7 +89,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Очистка кэша устройства
      * @return self
     */
     public function cache() : self{
@@ -101,7 +101,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Очистка конфигураций приложения
      * @return self
      */
     public function config() : self{
@@ -114,7 +114,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Очистка маршрутов приложения
      * @return self
      */
     public function route() : self{
@@ -133,7 +133,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Очистка шаблонов приложения
      * @return self
      */
     public function view() : self{
@@ -146,7 +146,7 @@ class ClearCacheClass
     }
 
     /**
-     *
+     * Очистка всех кэшов приложения
      * @return self
      */
     public function all() : self{
